@@ -10,7 +10,7 @@ module.exports = {
     // 输出的路径，通常到绝对路径
     path: path.join(__dirname, 'dist'),
     // 静态资源在服务器上运行时的访问路径，可以直接http://localhost:8080/dist/bundle.js访问到服务器中的bundle.js文件
-    // publicPath: '/build',
+    // publicPath: '/bundle',
     // 输出文件名字
     filename: "bundle.js"
   },
@@ -33,7 +33,7 @@ module.exports = {
         }]
       },
       {
-        test: /\.(png|jpg|gif)/,
+        test: /\.(png|jpg|gif|ttf|woff)/,
         use: [{
           loader: 'url-loader',
           options: {

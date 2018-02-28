@@ -1,8 +1,6 @@
 <template>
-  <div>
-      公共头部
-      <router-view></router-view>
-      公共底部
+  <div class="box">
+    <router-view></router-view>     
   </div>
 </template>
 
@@ -13,5 +11,8 @@
 </script>
 
 <style scoped>
-
+  .box{
+    height: 100%;
+    background: pink;
+  }
 </style>
