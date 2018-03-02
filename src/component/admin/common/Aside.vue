@@ -41,7 +41,7 @@
                   title: '购物商城',
                   icon: 'el-icon-goods',
                   children: [
-                      { title: '内容管理', path: '/a' },
+                      { title: '内容管理', path: 'goodsctlist' },
                       { title: '类别管理', path: '/b' },
                       { title: '评论管理', path: '/c' },
                   ]

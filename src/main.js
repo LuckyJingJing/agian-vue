@@ -31,11 +31,16 @@ import api from './js/api-config'
 //把我们的请求的地址，也封装到Vue的原型上面，方便使用
 Vue.prototype.$api = api
 
+//路由守卫
+var router = new VueRouter(router);
+import beforeEach from './js/beforeEach.js'
+router.beforeEach(beforeEach)
+
 //创建vue实例
 var vm = new Vue({
   el:"#app",
   //挂载根组件
   render:c=>c(App),
   //挂载路由
-  router: new VueRouter(router)
+  router
 })
